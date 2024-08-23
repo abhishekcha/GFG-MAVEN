@@ -13,13 +13,17 @@ public class MyCalc {
 	{
 		return a*b;
 	}
-
+	public int divi(int a,int b)
+	{
+		return a/b;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MyCalc calc=new MyCalc();
 		System.out.println("sum is :"+calc.sum(25, 20));
 		System.out.println("diff is :"+calc.diff(244, 40));
 		System.out.println("multiplication is :"+calc.mul(24, 20));
+		System.out.println("division is :"+calc.divi(24, 20));
 	}
 
 }
