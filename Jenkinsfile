@@ -8,28 +8,28 @@ pipeline
 	
 	stages
 	{
-		stages('Welcome Stage')
+		stage('Welcome Stage')
 		{
 			steps
 			{
 				echo 'welcome to jenkins pipeline'
 			}
 		}
-		stages('clean Stage')
+		stage('clean Stage')
 		{
 			steps
 			{
 				bat 'mvn clean'
 			}
 		}  
-		stages('build Stage')
+		stage('build Stage')
 		{
 			steps
 			{
 				bat 'mvn install'
 			}
 		}
-		stages('success Stage')
+		stage('success Stage')
 		{
 			steps
 			{
